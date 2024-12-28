@@ -1,114 +1,188 @@
 <template>
-    <div class="row">
-      <div class="header">Kompetensi Keahlian</div>
-      <div class="col-4">
-        <div class="alert alert-secondary">
-            <img src="..." class="card-img-top" alt="...">
-          <h3>Teknik Komputer dan Jaringan</h3>
-          <div>sarana pendukung pembelajaran:</div>
+  <div class="kompetensi-container">
+    <div class="header">
+      <h2>📚 Kompetensi Keahlian</h2>
+    </div>
+    <div class="main-card">
+      <div class="grid-container">
+        <!-- Card 1 -->
+        <div class="kompetensi-card">
+          <div class="icon">
+            <img src="/assets/image/TKJT.png" alt="icon" />
+          </div>
+          <div class="content">
+            <h3>Teknik Komputer dan Jaringan</h3>
+            <strong>Sarana pendukung pembelajaran:</strong>
+            <ul>
+              <li>Bengkel TKJ</li>
+              <li>Network Simulator</li>
+              <li>Techno Park</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="kompetensi-card">
+          <div class="icon">
+            <img src="/assets/image/PPLG.png" alt="icon" />
+          </div>
+          <div class="content">
+            <h3>Pengembangan Perangkat Lunak Dan Gim</h3>
+            <strong>Sarana pendukung pembelajaran:</strong>
+            <ul>
+              <li>Rps Pplg</li>
+              <li>Gedung Pplg</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="kompetensi-card">
+          <div class="icon">
+            <img src="/assets/image/tbsm.png" alt="icon" />
+          </div>
+          <div class="content">
+            <h3>Teknik Bisnis Sepeda Motor</h3>
+            <strong>Sarana pendukung pembelajaran:</strong>
+            <ul>
+              <li>Bengkel Tbsm</li>
+              <li>Kamera Profesional</li>
+              <li>Lab Animasi</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="kompetensi-card">
+          <div class="icon">
+            <img src="/assets/image/camera.png" alt="icon" />
+          </div>
+          <div class="content">
+            <h3>Desain Komunikasi Visual</h3>
+            <strong>Sarana pendukung pembelajaran:</strong>
+            <ul>
+              <li>Technopark</li>
+              <li>Kamera Profesional</li>
+              <li>Lab IoT</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="kompetensi-card">
+          <div class="icon">
+            <img src="/assets/image/toi.png" alt="icon" />
+          </div>
+          <div class="content">
+            <h3>Teknik Otomasi Industri</h3>
+            <strong>Sarana pendukung pembelajaran:</strong>
+            <ul>
+              <li>Bengkel Mesin</li>
+              <li>Simulator CNC</li>
+              <li>Peralatan Las</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="col-4">
-        <div class="alert alert-secondary">
-            <img src="..." class="card-img-top" alt="...">
-          <h3>Rekayasa Perangkat Lunak dan Gim</h3>
-          <div>sarana pendukung pembelajaran:</div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="alert alert-secondary">
-            <img src="..." class="card-img-top" alt="...">
-          <h3>Teknik dan Bisnis Sepeda Motor</h3>
-          <div>sarana pendukung pembelajaran:</div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="alert alert-secondary">
-            <img src="..." class="card-img-top" alt="...">
-          <h3>Desain Komunikasi Visual</h3>
-          <div>sarana pendukung pembelajaran:</div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="alert alert-secondary">
-            <img src="..." class="card-img-top" alt="...">
-          <h3>Teknik Otomasi Industri</h3>
-          <div>sarana pendukung pembelajaran</div>
-        </div>
+      <div class="footer">
+        <button class="btn btn-primary">Selengkapnya</button>
       </div>
     </div>
-  </template>
-  
-  <style>
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-    background-color: #f8f9fa; 
-    border-radius: 8px;
-    margin: 20px auto;
-    max-width: 1200px; 
-  }
-  
-  
-  .header {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 20px;
-    color: #343a40;
-  }
-  
+  </div>
+</template>
 
-  .col-4 {
-    flex: 0 0 calc(33.333% - 20px); 
-    box-sizing: border-box;
-  }
-  
-  @media (max-width: 768px) {
-    .col-4 {
-      flex: 0 0 calc(50% - 20px); 
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .col-4 {
-      flex: 0 0 100%; 
-    }
-  }
-  
-  /* Styling untuk alert */
-  .alert {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+<style scoped>
+  .kompetensi-container {
+    font-family: Arial, sans-serif;
     padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  }
+
+  .header h2 {
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+  }
+
+  .main-card {
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .kompetensi-card {
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ffffff, #e6e9f0);
+    text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
   }
-  
-  .alert:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+
+  .kompetensi-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   }
-  
-  
-  .alert h3 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #007bff; 
-    margin-bottom: 10px;
+
+  .kompetensi-card .icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
   }
-  
-  
-  .alert div {
-    font-size: 14px;
-    color: #6c757d; 
+
+  .kompetensi-card .content h3 {
+    font-size: 1.4em;
+    margin: 15px 0;
+    color: #333;
   }
-  </style>
-  
+
+  .kompetensi-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+
+  .kompetensi-card ul li {
+    margin: 5px 0;
+    color: #555;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+  .footer .btn:hover {
+    background-color: #0056b3;
+  }
+
+  .h4 {
+    font-size: 1.4em;
+    margin: 15px 0;
+    color: #333;
+  }
+</style>

@@ -49,6 +49,11 @@
                     Data Statistik
                   </nuxt-link>
                 </li>
+                <li>
+                  <nuxt-link to="/profil/Data-Statistik/" class="dropdown-item">
+                    ekstrakulikuler
+                  </nuxt-link>
+                </li>
               </ul>
             </li>
               <!-- Dropdown kurikulum -->

@@ -5,7 +5,6 @@
       </div>
       <div class="main-card">
         <div class="grid-container">
-          <!-- Card 1 -->
           <div class="kompetensi-card">
             <div class="icon">
               <img src="/assets/image/tkj.png" alt="icon" />
@@ -20,8 +19,6 @@
               </ul>
             </div>
           </div>
-  
-          <!-- Card 2 -->
           <div class="kompetensi-card">
             <div class="icon">
               <img src="/assets/image/logo pplg.png" alt="icon" />
@@ -35,8 +32,6 @@
               </ul>
             </div>
           </div>
-  
-          <!-- Card 3 -->
           <div class="kompetensi-card">
             <div class="icon">
               <img src="/assets/image/tbsm.png" alt="icon" />
@@ -51,8 +46,6 @@
               </ul>
             </div>
           </div>
-  
-          <!-- Card 4 -->
           <div class="kompetensi-card">
             <div class="icon">
               <img src="/assets/image/camera.png" alt="icon" />
@@ -67,8 +60,6 @@
               </ul>
             </div>
           </div>
-  
-          <!-- Card 5 -->
           <div class="kompetensi-card">
             <div class="icon">
               <img src="/assets/image/toi.png" alt="icon" />
@@ -91,7 +82,7 @@
     </div>
   </template>
   
-  <style scoped>
+  <style>
     .kompetensi-container {
       font-family: Arial, sans-serif;
       padding: 20px;

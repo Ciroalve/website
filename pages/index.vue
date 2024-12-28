@@ -24,11 +24,25 @@
             <span class="carousel-control-next-icon"></span>
         </button>
     </div>
-    
+    <div class="container-fluid">
+    <div class="card">
+      <h3 class="title">Sambutan Kepala Sekolah</h3>
+      <div class="content">
+        <img class="profile" src="/assets/img/kepala.jpg" alt="Kepala Sekolah" />
+        <div class="message">
+          <p><strong>Assalamu'alaikum Wr, Wb</strong></p>
+          <p>
+            Segala puji dan syukur kita panjatkan kehadirat Alloh SWT, semoga kita
+            semua ada dalam lindungan-nya. dan atas perkenan-nya pula kami
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
     <Jurusan />
 </section>
 <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
       <div class="footer-section">
         <h3>Hubungi Kami</h3>
         <p>SMKN 4 Tasikmalaya</p>
@@ -114,6 +128,54 @@
             height: 500px;
         }
     }
+    .container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.title {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: -20px -20px 20px -20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.message {
+  font-size: 1rem;
+  color: #333;
+}
+
+.message p {
+  margin: 5px 0;
+}
     body {
   font-family: Arial, sans-serif;
   margin: 0;

@@ -53,12 +53,8 @@
       </tbody>
     </table>
   </div>
-  <script>
-export default {
-  name: "Perkembangan",
-  data() {
-    return {
-      data: [
+  <div class="row">
+    <div class="col-4">   
         <table>
         { tahun: "2010/2011", ruangKelas: "di SMPN 17", kompetensiKeahlian: "TKJ", jumlahSiswa: "44", pimpinan: "PLT. Drs. H. Ario Wiguno, M.MPd" },
         { tahun: "2011/2012", ruangKelas: "di SMPN 17", kompetensiKeahlian: "TKJ", jumlahSiswa: "?", pimpinan: "PLT. Drs. H. Ario Wiguno, M.MPd" },
@@ -74,11 +70,10 @@ export default {
         { tahun: "2021/2022", ruangKelas: "di SMKN 4", kompetensiKeahlian: "TKJ, RPL, TBSM", jumlahSiswa: "?", pimpinan: "Kurniawan, S.Pd, M.Pd" },
         { tahun: "2022/2023", ruangKelas: "di SMKN 4", kompetensiKeahlian: "TKJ, RPL, TBSM, TOI, DKV", jumlahSiswa: "1240", pimpinan: "Kurniawan, S.Pd, M.Pd" },
         </table>
+      </div>
+    </div>
       ],
-    };
-  },
-};
-</script>
+
   </template>
   
   <script>

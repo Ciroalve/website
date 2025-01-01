@@ -277,6 +277,175 @@
   </template>
 
 <style scoped>
+/* Global Styles */
+.container-fluid {
+  padding: 20px;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-secondary {
+  color: #6c757d !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.bg-primary {
+  background-color: #007bff !important;
+}
+
+.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+.bg-info {
+  background-color: #17a2b8 !important;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.card-body {
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+.card-body h6 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.card-body h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.card-body p {
+  margin-bottom: 5px;
+}
+
+/* Button Styles */
+.btn {
+  font-size: 0.9rem;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styles */
+.tableidentitas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.tableidentitas td {
+  padding: 8px;
+  vertical-align: top;
+}
+
+.n4table td:first-child {
+  width: 30px;
+}
+
+.n4table td:nth-child(3) {
+  width: 10px;
+}
+
+/* Additional Styles */
+.rounded-3 {
+  border-radius: 16px !important;
+}
+
+.p-2 {
+  padding: 10px !important;
+}
+
+.p-1 {
+  padding: 5px !important;
+}
+
+.m-3 {
+  margin: 15px !important;
+}
+
+.mb-3 {
+  margin-bottom: 15px !important;
+}
+
+.mt-3 {
+  margin-top: 15px !important;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-body h3 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+}
+
 </style>
  
   

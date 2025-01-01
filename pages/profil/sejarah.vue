@@ -84,4 +84,110 @@
 </template>
 
 <style scoped>
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Container Styling */
+.container-fluid {
+  padding: 0 15px;
+}
+
+/* Header */
+h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.text-secondary {
+  color: #6c757d !important;
+}
+
+/* Visi Misi Section */
+.visimisi {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.visimisi h4,
+.visimisi h5 {
+  color: #333333;
+}
+
+.visimisi ol {
+  padding-left: 20px;
+}
+
+.visimisi li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Blockquote for Visi */
+.visimisi p q {
+  font-style: italic;
+  color: #555555;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Horizontal Rule */
+hr[title="TUJUAN SMK"] {
+  border: none;
+  border-top: 2px solid #000;
+  margin: 30px 0;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.rounded-3 {
+  border-radius: 8px;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+.p-1 {
+  padding: 0.25rem !important;
+}
+
+.m-3 {
+  margin: 1rem !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+/* Custom Scroll */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #6c757d #f1f1f1;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6c757d;
+  border-radius: 10px;
+}
+
 </style>

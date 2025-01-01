@@ -63,7 +63,7 @@
   </div>
 </template>
 
-<style scoped>
+<style>
 .container-fluid {
   padding: 20px;
 }

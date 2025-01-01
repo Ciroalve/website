@@ -1,170 +1,84 @@
 <template>
-    <div class="history">
-      <div class="container">
-        <div class="row">
-          <!-- Gambar Profil -->
-          <div class="image-container">
-            <img src="/assets/img/PaKur.jpg" alt="Kepala Sekolah" class="profile-image" />
-          </div>
-          <!-- Konten Sejarah -->
-          <div class="content">
-            <h2>Sejarah SMK Negeri 4 Tasikmalaya</h2>
-            <p>
-              Sejalan dengan Program Pemerintah dibidang pendidikan Menengah Kejuruan pada saat itu yakni pemerataan akses ditambah pula dengan banyaknya keinginan masyarakat yang
-              mengharapkan adanya SMK Negeri di daerah Kecamatan Purbaratu Kota Tasikmalaya, terutama untuk menampung tamatan dari SLTP yang ingin melanjutkan ke SMK maka beberapa
-              tokoh masyarakat, unsur pejabat pemerintah di Kecamatan Purbaratu Kota Tasikmalaya mengusulkan kepada pemerintah Kota Tasikmalaya dan Pemerintah Provinsi Jawa Barat,
-              agar berdirinya SMK Negeri di Kecamatan Purbaratu Kota Tasikmalaya.
-            </p>
-            <p>
-              Setelah melalui perjuangan yang sangat panjang dari berbagai pihak khususnya Disdik Kota Tasikmalaya dan pihak-pihak terkait lainnya sesuai prosedur dan ketentuan yang
-              berlaku pada waktu itu dengan mengucapkan syukur Alhamdulillah akhirnya pada tahun pelajaran 2010/2011 SMK Negeri 4 Tasikmalaya mulai berdiri, pada awalnya membuka
-              Kompetensi Keahlian Teknik Komputer dan Jaringan dengan pendaftar peserta Didik Baru pada waktu itu berjumlah 44 orang. Pada awalnya tempat belajar menumpang di SMP
-              Negeri 17 Kota Tasikmalaya, dan sekolah induknya adalah SMK Negeri 2 Kota Tasikmalaya. Untuk Tenaga pendidik dan Tenaga Kependidikan masih dibantu sepenuhnya oleh kedua
-              sekolah tersebut.
-            </p>
-            <p>
-              Pada tahun 2012 keluarlah surat Izin Pendirian berdasarkan keputusan kepala Badan Pelayanan Perizinan Terpadu Kota Tasikmalaya No. 420/9/SK-BPPT/2012 Tanggal 06
-              Februari 2012.
-            </p>
-          </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+          <h5 style="background-color: black;" class="text-white text-center rounded-3 p-2 m-3">
+            VISI&MISI-TUJUAN
+          </h5>
         </div>
-      </div>
+        <div class="col-lg-12">
+          <p style="background-color: whitesmoke;" class="rounded-3 p-1 m-3 text-secondary">
+            <NuxtLink to="/profil" class="text-decoration-none">Profil</NuxtLink>/ Visi & Misi
+          </p>
+        </div>
+        <div class="visimisi subcontent">
+                <p style="margin-top:30px;">
+                <h4 style="text-align:center"><strong>Visi & Misi SMK Negeri 4 Tasikmalaya</strong></h4>
+                </p>
+                <p style="margin-top:40px;">
+                <h5 class="text-center"><strong>Visi :</strong></h5>
+                </p>
+                <p style="margin-top:40px;">
+                <p align="center"><q><strong>TERWUJUDNYA LULUSAN YANG CERDAS, AKTIF, KOMPETITIF, ADAPTIF, DAN PRODUKTIF BERLANDASKAN IMAN DAN TAKWA</strong></q></p>
+                <p align="center"><q><strong>(CAKAP BERIMTAK)</strong></q></p>
+                </p>
+                <p style="margin-top:40px;">
+                <h5 class="text-center"><strong>Misi :</strong></h5>
+                <ol start="1">
+                    <li style="text-align:justify;line-height:200%;">Menyiapkan Sumber Daya Manusia yang cerdas dan kompeten baik hardskill maupun softskill.</li>
+                    <li style="text-align:justify;line-height:200%;">Meningkatkan dan mengembangkan aktifitas serta kreatifitas seluruh warga sekolah dalam berbagai kegiatan positif.</li>
+                    <li style="text-align:justify;line-height:200%;">Mewujudkan manajemen pengelolaan yang efektif, efesien, transparan, akuntabel dan layanan prima.</li>
+                    <li style="text-align:justify;line-height:200%;">Menumbuhkan dan mengembangkan potensi dan kemampuan Sumber Daya Manusia yang berdaya saing tinggi melalui berbagai kegiatan akademik maupun non akademik.</li>
+                    <li style="text-align:justify;line-height:200%;">Menyelenggarakan berbagai program kegiatan dalam upaya meningkatkan Sumber Daya Manusia yang mampu menyesuaikan dengan perkembangan.</li>
+                    <li style="text-align:justify;line-height:200%;">Mengembangkan sarana prasarana dan lingkungan sekolah yang menyenangkan sebagai wadah menumbuhkembangkan daya kreasi dan inovasi untuk menghasilkan produk teknologi tepat guna.</li>
+                    <li style="text-align:justify;line-height:200%;">Membangun jiwa wirausaha yang handal melalui pembelajaran Teaching Factory (TEFA) dan Kelas Industri.</li>
+                    <li style="text-align:justify;line-height:200%;">Menjalin dan mengembangkan kemitraan dengan Industri dan Dunia Kerja (IDUKA) serta lembaga lainnya yang relevan.</li>
+                    <li style="text-align:justify;line-height:200%;">Menanamkan dan membudayakan sikap dan perilaku yang baik pada aktivitas di sekolah maupun dalam kehidupan sehari-hari.</li>
+                </ol>
+                </p>
+                <hr title="TUJUAN SMK" />
+                <p style="margin-top:30px;">
+                <h4 style="text-align:center"><strong>Tujuan SMK Negeri 4 Tasikmalaya</strong></h4>
+                </p>
+                <p style="margin-top:15px;">
+                <!-- <h5><strong>UMUM</strong></h5> -->
+                <ol start="1">
+                    <li style="text-align:justify;line-height:200%;">Sekolah meraih prestasi pencapaian nilai rata-rata UN dan indeks integritas diatas rata-rata Nasional pada tahun 2026.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah Menghasilkan Tamatan yang siap bekerja Minimal 50 % Tamatan bekerja pada tahun tamat.</li>
+                    <li style="text-align:justify;line-height:200%;">Terciptanya aktivitas dan kreatifitas yang positif oleh seluruh warga sekolah.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah meraih prestasi akademik dan non akademik minimal di tingkat provinsi Jawa Barat dan Nasional.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah memiliki tenaga pendidik dan kependidikan yang berkualifikasi minimal S1 dan linier dengan tugasnya, bersertifikat pendidik dan telah mengikuti diklat implementasi kurikulum merdeka pada tahun 2024.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah mencapai kriteria sekolah berwawasan lingkungan (adiwiyata) pada tahun 2026.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah terakreditasi dengan Nilai A pada tahun 2024.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah memiliki Lembaga Sertifikasi Profesi (LSP) yang terlisensi, Tempat Uji Kompetensi (TUK) yang terverifikasi dan Bursa Kerja Khusus (BKK) yang terakreditasi pada tahun 2025.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah memiliki Perpustakaan yang terakreditasi A pada tahun 2026.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah menjadi Badan Layanan Umum Daerah (BLUD) pada tahun 2025.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah mengimplementasikan Kurikulum Merdeka untuk seluruh tingkat pada tahun 2024.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah memiliki Dokumen Kurikulum Merdeka untuk seluruh tingkat pada tahun 2024.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah menerapkan Kurikulum Merdeka dengan Pembelajaran Berdiferensiasi dan Pembelajaran Sosial-Emosional untuk seluruh tingkat pada tahun 2024.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah memiliki sarana prasaranasesuai dengan standar pelayanan minimal pendidikan dan standar IDUKA pada tahun 2026.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah memiliki Teaching Factory di semua program keahlian yang sesuai dengan standar industri dan representatif pada tahun 2024.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah melaksanakan program menumbuh kembangkan Budi Pekerti dan akhlak mulia melalui pendidikan karakter pada kegiatan, intra, ekstra kurikuler dan non kurikuler.</li>
+                </ol>
+                </p>
+                <!-- <p style="margin-top:20px;">
+                <h5><strong>TUJUAN SITUASIONAL SEKOLAH</strong></h5>Dalam kurun waktu empat tahun ke depan tahun 2018-2019, tujuan akan dicapai oleh sekolah antara lain:<ol start="1">
+                    <li style="text-align:justify;line-height:200%;">Sekolah meraih prestasi pencapaian nilai rata-rata UN dan indeks integritas diatas rata-rata Nasional.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah meraih prestasi akademik dan non akademik minimal Juara I di tingkat provinsi Jawa Barat dan Nasional.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah melaksanakan program menumbuh kembangkan Budi Pekerti dan akhlak mulia melalui pendidikan karakter pada kegiatan, intra, ekstra kurikuler dan non kurikuler.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah Menghasilkan Tamatan yang siap bekerja Minimal 80 % Tamatan bekerja pada tahun tamat.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah mengimplementasikan Kurikulum 2013 untuk seluruh tingkat.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah memiliki/mencapai standar isi dan lengkapnya : telah dibuat KTSP, silabus , model/sistem penilaian , RPP , Bahan Ajar, untuk seluruh tingkat.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah memiliki/mencapai standar proses pembelajaran yang meliputi: tercapai/telah dibuat/ditetapkan pelaksanakan pembelajaran dengan strategi/metode: Pembelajaran Saintifik,pendekatan pembelajaran dan penilaian sesuai tuntutan kurikulum 2013, berbasis TIK , dll.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah memiliki/mencapai standar pendidik dan tenaga kependidikan yang meliputi: semua guru berkualifikasi minimal S1, telah mengikuti diklat kurikulum 2013, semua mengajar sesuai bidangnya.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah memiliki/mencapai standar sarpras/fasilitas sekolah meliputi: semua sarpras, fasilitas, peralatan, dan perawatan memenuhi SPM serta&nbsp;Sekolah memenuhi kriteria sekolah berwawasan lingkungan (adiwiyata).</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah mengimplementasikan dan meraih sertifikat Sistem Manajemen Mutu ISO 9001:2008, serta mengimplementasikan SIMS berbasis TIK pada seluruh aktifitas pendidikan dan tatakelola sekolah.</li>
+                    <li style="text-align:justify;line-height:200%;">Semua Kompetensi Keahlian telah terakreditasi dengan Nilai A.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah memiliki unit kerja Carier Center, sebagai wadah dari Training Center, Tempat Uji Kompetensi ( TUK ), dan Bursa Kerja Khusus.</li>
+                    <li style="text-align:justify;line-height:200%;">Sekolah memiliki kesepakatan Kemitraan dengan Du/Di dalam rangka mengembangkan Teaching Factory dan Techno Park.</li>
+                </ol>
+                </p> -->
+            </div>
     </div>
-    <div class="table-container">
-    <h1>Perkembangan Infrastruktur SMKN 4 Tasikmalaya Pertahun</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Tahun</th>
-          <th>Ruang Kelas</th>
-          <th>Kompetensi Keahlian</th>
-          <th>Jumlah Siswa</th>
-          <th>Pimpinan</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="(row, index) in data" :key="index">
-          <td>{{ row.tahun }}</td>
-          <td>{{ row.ruangKelas }}</td>
-          <td>{{ row.kompetensiKeahlian }}</td>
-          <td>{{ row.jumlahSiswa }}</td>
-          <td>{{ row.pimpinan }}</td>
-        </tr>
-      </tbody>
-    </table>
   </div>
-  <div class="row">
-    <div class="col-4">   
-        <table>
-        { tahun: "2010/2011", ruangKelas: "di SMPN 17", kompetensiKeahlian: "TKJ", jumlahSiswa: "44", pimpinan: "PLT. Drs. H. Ario Wiguno, M.MPd" },
-        { tahun: "2011/2012", ruangKelas: "di SMPN 17", kompetensiKeahlian: "TKJ", jumlahSiswa: "?", pimpinan: "PLT. Drs. H. Ario Wiguno, M.MPd" },
-        { tahun: "2012/2013", ruangKelas: "di SMKN 4", kompetensiKeahlian: "TKJ", jumlahSiswa: "?", pimpinan: "PLT. H. Edy Sugandi, MM" },
-        { tahun: "2013/2014", ruangKelas: "di SMKN 4", kompetensiKeahlian: "TKJ", jumlahSiswa: "?", pimpinan: "PLT. H. Edy Sugandi, MM" },
-        { tahun: "2014/2015", ruangKelas: "di SMKN 4", kompetensiKeahlian: "TKJ", jumlahSiswa: "268", pimpinan: "Drs. H. Desnueri" },
-        { tahun: "2015/2016", ruangKelas: "di SMKN 4", kompetensiKeahlian: "TKJ, RPL, TSM", jumlahSiswa: "?", pimpinan: "Drs. H. Desnueri" },
-        { tahun: "2016/2017", ruangKelas: "di SMKN 4", kompetensiKeahlian: "TKJ, RPL, TSM", jumlahSiswa: "693", pimpinan: "Drs. H. Desnueri" },
-        { tahun: "2017/2018", ruangKelas: "di SMKN 4", kompetensiKeahlian: "TKJ, RPL, TBSM", jumlahSiswa: "1021", pimpinan: "Drs. H. Desnueri" },
-        { tahun: "2018/2019", ruangKelas: "di SMKN 4", kompetensiKeahlian: "TKJ, RPL, TBSM", jumlahSiswa: "1093", pimpinan: "Drs. H. Desnueri" },
-        { tahun: "2019/2020", ruangKelas: "di SMKN 4", kompetensiKeahlian: "TKJ, RPL, TBSM", jumlahSiswa: "1116", pimpinan: "Drs. H. Desnueri" },
-        { tahun: "2020/2021", ruangKelas: "di SMKN 4", kompetensiKeahlian: "TKJ, RPL, TBSM", jumlahSiswa: "1150", pimpinan: "Didah S Sukanda, S.Pd, M.Pd" },
-        { tahun: "2021/2022", ruangKelas: "di SMKN 4", kompetensiKeahlian: "TKJ, RPL, TBSM", jumlahSiswa: "?", pimpinan: "Kurniawan, S.Pd, M.Pd" },
-        { tahun: "2022/2023", ruangKelas: "di SMKN 4", kompetensiKeahlian: "TKJ, RPL, TBSM, TOI, DKV", jumlahSiswa: "1240", pimpinan: "Kurniawan, S.Pd, M.Pd" },
-        </table>
-      </div>
-    </div>
-      ],
-
-  </template>
-  
-  <script>
-  export default {
-    name: "History",
-  };
-  </script>
-  
-  <style scoped>
-  .history {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-  }
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .image-container {
-    flex: 1;
-    max-width: 150px;
-    text-align: center;
-  }
-  .profile-image {
-    width: 100%;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  .content {
-    flex: 3;
-    text-align: justify;
-  }
-  .content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  .content p {
-    line-height: 1.8;
-    margin-bottom: 10px;
-    color: #555;
-  }
-  .table-container {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  max-width: 1000px;
-  margin: auto;
-  text-align: left;
-  color: #333;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #444;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 0 auto;
-}
-
-thead {
-  background-color: #f4f4f4;
-}
-
-th,
-td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
-}
-
-th {
-  background-color: #f2f2f2;
-  font-weight: bold;
-}
-
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-tr:hover {
-  background-color: #f1f1f1;
-}
-  </style>
-  
+</template>

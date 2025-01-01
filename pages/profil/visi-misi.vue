@@ -84,4 +84,117 @@
 </template>
 
 <style scoped>
+/* Global Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container-fluid {
+  padding: 15px;
+}
+
+/* Styling for Headers */
+h4, h5 {
+  font-weight: bold;
+  color: #333;
+}
+
+h4 {
+  margin-bottom: 20px;
+}
+
+h5 {
+  margin-bottom: 15px;
+}
+
+/* Styling for Links */
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+/* Box and Background Styling */
+.rounded-3 {
+  border-radius: 8px;
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.visimisi {
+  margin: 20px 15px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.subcontent {
+  padding: 20px;
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* List Styling */
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Center Alignment */
+.text-center {
+  text-align: center;
+}
+
+/* Button or Highlighted Elements */
+p[style*="background-color: whitesmoke"] {
+  background-color: #f8f9fa !important;
+  color: #333;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Horizontal Rule Styling */
+hr[title="TUJUAN SMK"] {
+  border: none;
+  height: 2px;
+  background-color: #333;
+  margin: 20px 0;
+}
+
+/* Margin and Padding Utilities */
+.p-1 {
+  padding: 5px;
+}
+
+.p-2 {
+  padding: 10px;
+}
+
+.m-3 {
+  margin: 15px;
+}
+
+.m-5 {
+  margin: 30px;
+}
+
 </style>

@@ -1,402 +1,280 @@
 <template>
-    <div class="profile-container">
-      <div class="profile-header">
-        <h1>Profil SMKN 4 Tasikmalaya</h1>
-      </div>
-      <div class="profile-content">
-        <div class="profile-tab">
-          <button @click="activeTab = 'profil'" :class="{ active: activeTab === 'profil' }">Profil</button>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+          <h5 style="background-color: black;" class="text-white text-center rounded-3 p-2 m-3">
+            Profil <b>SMKN 4 TASIKMALAYA</b>
+          </h5>
         </div>
-        <div v-if="activeTab === 'profil'" class="profile-details">
-          <h2>Sejarah SMK Negeri 4 Tasikmalaya</h2>
-          <div class="profile-description">
-            <img src="/assets/img/pakur.jpg" alt="Foto Kepala Sekolah" width="100" height="100" />
-            <p>
-              Sejalan dengan Program Pemerintah di bidang pendidikan Menengah Kejuruan pada saat itu yakni pemerataan akses
-              ditambah pula dengan banyaknya keinginan masyarakat yang mengharapkan adanya SMK Negeri di daerah Kecamatan
-              Purbaratu Kota Tasikmalaya, terutama untuk menampung tamatan dari SLTP yang ingin melanjutkan ke SMK, maka
-              beberapa tokoh masyarakat, unsur pejabat pemerintah di Kecamatan Purbaratu Kota Tasikmalaya mengusulkan
-              kepada pemerintah Kota Tasikmalaya dan Pemerintah Provinsi Jawa Barat, agar berdirinya SMK Negeri di
-              Kecamatan Purbaratu Kota Tasikmalaya.
-            </p>
-          </div>
-          <button class="read-more-button">Read more</button>
+        <div class="col-lg-12">
+          <p style="background-color: whitesmoke;" class="rounded-3 p-1 m-3 text-secondary">
+            <NuxtLink to="/profil" class="text-decoration-none">Profil</NuxtLink>
+          </p>
         </div>
-      </div>
-    </div>
-    <div class="visi-misi-container">
-    <div class="visi-misi-header">
-      <h1>Visi dan Misi SMK Negeri 4 Tasikmalaya</h1>
-    </div>
-    <div class="visi-misi-content">
-      <div class="visi-section">
-        <h2>Visi:</h2>
-        <blockquote>
-          "Dengan Berlandaskan Iman dan Taqwa Menghasilkan Tamatan yang Cerdas, Akhlak mulia, Kreatif, Aktif, Produktif (CAKAP)"
-        </blockquote>
-      </div>
-      <div class="misi-section">
-        <h2>Misi:</h2>
-        <ol>
-          <li>
-            Mengembangkan kecerdasan Peserta didik agar Berprestasi, beriman dan bertaqwa pada Tuhan Yang Maha Esa, berakhlak mulia, berkarakter, 
-            berwawasan kebangsaan, berjiwa entrepreneur, serta peduli lingkungan.
-          </li>
-        </ol>
-      </div>
-      <button class="read-more-button">Read more</button>
-    </div>
-  </div>
-  <div class="identitas-sekolah-container">
-    <div class="identitas-header">
-      <h1>Identitas Sekolah Menengah Kejuruan Negeri 4 Tasikmalaya</h1>
-    </div>
-    <div class="identitas-content">
-      <ul>
-        <li>
-          <strong>a. Nama Sekolah</strong> : SMK Negeri 4 Kota Tasikmalaya
-        </li>
-        <li>
-          <strong>b. NPSN</strong> : 20276063
-        </li>
-        <li>
-          <strong>c. Nomor Statistik Sekolah</strong> : 401327810004
-        </li>
-        <li>
-          <strong>d. Alamat</strong> :
-          <ul>
-            <li><strong>Jalan</strong> : Jl Depok RT 02 RW 05</li>
-            <li><strong>Kelurahan</strong> : Sukamenak</li>
-            <li><strong>Kecamatan</strong> : Purbaratu</li>
-            <li><strong>Kota</strong> : Tasikmalaya</li>
-          </ul>
-        </li>
-      </ul>
-      <button class="read-more-button">Read more</button>
-    </div>
-  </div>
-  <div class="container">
-    <h3 class="title">Pendidik dan Tenaga Kependidikan</h3>
-    <div class="cards">
-      <div v-for="(card, index) in cards" :key="index" class="card">
-        <h4><i class="info-icon">ℹ️</i> {{ card.title }}</h4>
-        <p>Laki-laki : {{ card.male }} orang</p>
-        <p>Perempuan : {{ card.female }} orang</p>
-        <p>Total : {{ card.total }} orang</p>
-      </div>
-    </div>
-    <button class="read-more">Read more</button>
-  </div>
-  <div class="container">
-    <h3 class="title">Struktur Organisasi</h3>
-    <ul class="organization-list">
-      <li v-for="(person, index) in organization" :key="index">
-        <span class="role">{{ index + 1 }}. {{ person.role }}</span> : <span class="name">{{ person.name }}</span>
-      </li>
-    </ul>
-    <button class="read-more">Read more</button>
-  </div>
-  <script>
-  export default {
-    data() {
-    return {
-      organization: [
-        { role: "Kepala Sekolah", name: "Kurniawan, S.Pd, M.Pd." },
-        { role: "Komite Sekolah", name: "H. Abun Sulaeman, S.Ag" },
-        { role: "PLT Kasubag TU", name: "Yaman Suryaman, S.Sos." },
-      ],
-    };
-  },
-};
-</script>
+        <div class="row mt-3">
 
- 
+        <!-- Teknik Komputer dan Jaringan -->
+        <!-- Sejarah -->
+        <div class="col-lg-12 mb-3">
+          <div class="card">
+            <div class="card-header bg-light">
+              <h5 class="text-center"> Sejarah SMK Negeri 4 Tasikmalaya</h5>
+            </div>
+            <div class="card-body">
+              <p>
+                Sejalan dengan Program Pemerintah dibidang pendidikan Menengah Kejuruan pada saat itu yakni 
+                pemerataan akses ditambah pula dengan banyaknya keinginan masyarakat yang mengharapkan adanya
+                SMK Negeri di daerah Kecamatan Purbaratu Kota  Tasikmalaya, terutama untuk menampung tamatan
+                dari SLTP yang ingin melanjutkan ke SMK maka beberapa tokoh masyarakat, unsur pejabat pemerintah
+                di Kecamatan Purbaratu Kota Tasikmalaya mengusulkan kepada pemerintah Kota Tasikmalaya dan
+                Pemerintah Provinsi Jawa Barat, agar berdirinya SMK Negeri di Kecamatan Purbaratu Kota Tasikmalaya.
+              </p>
+              <!-- Tombol Aksi -->
+              <div class="text-center">
+                <NuxtLink to="/profil/sejarah">
+                  <button class="btn btn-primary me-2">Read More</button>
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visi dan Misi -->
+        <div class="col-lg-12 mb-3">
+          <div class="card">
+            <div class="card-header bg-light">
+              <h5 class="text-center"> Visi dan Misi SMK Negeri 4 Tasikmalaya</h5>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="col-12">Visi:</h5><p class="text-center">Dengan Berlandaskan Iman dan Taqwa Menghasilkan Tamatan yang Cerdas, Akhlak Mulia, Kreatif, Aktif, Produktif (CAKAP)</p>
+              <h5>Misi:</h5>
+              <p class="text-center">1. Menyiapkan Sumber Daya Manusia yang cerdas dan kompeten baik hardskill maupun softskill.<br>
+                2. Meningkatkan dan mengembangkan aktifitas serta kreatifitas seluruh warga sekolah dalam berbagai kegiatan positif.<br>
+                3. Mewujudkan manajemen pengelolaan yang efektif, efesien, transparan, akuntabel dan layanan prima.
+              </p>
+              <!-- Tombol Aksi -->
+              <div class="text-center">
+                <NuxtLink to="profil/Visi-Misi">
+                  <button class="btn btn-primary me-2">Read More</button>
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Identitas Sekolah -->
+        <div class="col-lg-12 mb-3">
+          <div class="card">
+            <div class="card-header bg-light">
+              <h5 class="text-center"> Identitas Sekolah Menengah Kejuruan Negeri 4 Tasikmalaya</h5>
+            </div>
+            <div class="card-body">
+              <table class="n4table tableidentitas">
+            <tbody>
+              <tr>
+                <td><b>a.</b></td>
+                <td><b>Nama Sekolah</b></td>
+                <td>:</td>
+                <td>SMK Negeri 4 Kota Tasikmalaya</td>
+              </tr>
+              <tr>
+                <td><b>b.</b></td>
+                <td><b>NPSN</b></td>
+                <td>:</td>
+                <td>20276063</td>
+              </tr>
+              <tr>
+                <td><b>c.</b></td>
+                <td><b>Nomor Statistik Sekolah</b></td>
+                <td>:</td>
+                <td>401327810004</td>
+              </tr>
+              <tr>
+                <td><b>d.</b></td>
+                <td><b>Alamat</b></td>
+                <td>:</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Jalan</td>
+                <td>:</td>
+                <td>Jl Depok RT 02 RW 05</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Kelurahan</td>
+                <td>:</td>
+                <td>Sukamenak</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Kecamatan</td>
+                <td>:</td>
+                <td>Purbaratu</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Kota</td>
+                <td>:</td>
+                <td>Tasikmalaya</td>
+              </tr>
+            </tbody>
+          </table>
+              <!-- Tombol Aksi -->
+              <!-- <div class="text-center">
+                  <button class="btn btn-primary me-2">Read More</button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Pendidik dan Tenaga Kependidikan -->
+        <div class="col-lg-12 mb-3">
+        <div class="card">
+          <div class="card-header bg-light">
+            <h5 class="text-center"> Pendidik dan Tenaga Kependidikan</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <!-- Jumlah Guru PNS -->
+              <div class="col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-header bg-primary text-white">
+                    <h6 class="text-center mb-0">Jumlah Guru PNS</h6>
+                  </div>
+                  <div class="card-body">
+                    <p>Laki-laki: 7 orang</p>
+                    <p>Perempuan: 3 orang</p>
+                    <p>Total: 10 orang</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Jumlah Guru Honorer -->
+              <div class="col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-header bg-secondary text-white">
+                    <h6 class="text-center mb-0">Jumlah Guru Honorer</h6>
+                  </div>
+                  <div class="card-body">
+                    <p>Laki-laki: 20 orang</p>
+                    <p>Perempuan: 10 orang</p>
+                    <p>Total: 30 orang</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Jumlah Tenaga Administrasi PNS -->
+              <div class="col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-header bg-success text-white">
+                    <h6 class="text-center mb-0">Jumlah Tenaga Administrasi PNS</h6>
+                  </div>
+                  <div class="card-body">
+                    <p>Laki-laki: 2 orang</p>
+                    <p>Perempuan: 1 orang</p>
+                    <p>Total: 3 orang</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Jumlah Tenaga Administrasi Honorer -->
+              <div class="col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-header bg-warning text-white">
+                    <h6 class="text-center mb-0">Jumlah Tenaga Administrasi Honorer</h6>
+                  </div>
+                  <div class="card-body">
+                    <p>Laki-laki: 3 orang</p>
+                    <p>Perempuan: 2 orang</p>
+                    <p>Total: 5 orang</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tombol Aksi -->
+            <!-- <div class="text-center mt-3">
+              <button class="btn btn-primary">Read More</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Struktur Organisasi -->
+      <div class="col-lg-12 mb-3">
+        <div class="card">
+          <div class="card-header bg-light">
+            <h5 class="text-center">Struktur Organisasi</h5>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li><strong>Kepala Sekolah:</strong> Kurniawan, S.Pd., M.Pd.</li>
+              <li><strong>Komite Sekolah:</strong> H. Abun Sulaeman, S.Ag</li>
+              <li><strong>PLT Kasubag TU:</strong> Yaman Suryaman, S.Sos.</li>
+            </ul>
+            <!-- <div class="text-center mt-3">
+              <button class="btn btn-primary">Read More</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Statistik Data -->
+      <div class="col-lg-12 mb-3">
+        <div class="card">
+          <div class="card-header bg-light">
+            <h5 class="text-center">Statistik Data</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <!-- Jumlah Siswa -->
+              <div class="col-md-6 mb-3">
+                <div class="card bg-success text-white text-center">
+                  <div class="card-body">
+                    <h6>Jumlah Siswa</h6>
+                    <h3>1610</h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Jumlah Rombel -->
+              <div class="col-md-6 mb-3">
+                <div class="card bg-danger text-white text-center">
+                  <div class="card-body">
+                    <h6>Jumlah Rombel</h6>
+                    <h3>41</h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Jumlah Guru -->
+              <div class="col-md-6 mb-3">
+                <div class="card bg-warning text-white text-center">
+                  <div class="card-body">
+                    <h6>Jumlah Guru</h6>
+                    <h3>82</h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Jumlah Tenaga Administrasi -->
+              <div class="col-md-6 mb-3">
+                <div class="card bg-info text-white text-center">
+                  <div class="card-body">
+                    <h6>Jumlah Tenaga Administrasi</h6>
+                    <h3>10</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-3">
+              <NuxtLink to="profil/Data-Statistik">
+                <button class="btn btn-primary">Read More</button>
+              </NuxtLink>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
   </template>
   
-  <script>
-  export default {
-    data() {
-      return {
-        activeTab: 'profil',
-      };
-    },
-  };
-  </script>
-  
-  <style scoped>
-  .profile-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .profile-header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .profile-tab {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .profile-tab button {
-    padding: 10px 20px;
-    margin: 0 5px;
-    border: none;
-    background-color: #f0f0f0;
-    cursor: pointer;
-  }
-  
-  .profile-tab button.active {
-    background-color: #333;
-    color: white;
-  }
-  
-  .profile-details {
-    text-align: center;
-  }
-  
-  .profile-description {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .profile-description img {
-    border-radius: 50%;
-    margin-right: 20px;
-  }
-  
-  .profile-description p {
-    text-align: justify;
-  }
-  
-  .read-more-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .read-more-button:hover {
-    background-color: #0056b3;
-  }
-  .visi-misi-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-
-.visi-misi-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.visi-misi-content {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-}
-
-.visi-section,
-.misi-section {
-  margin-bottom: 20px;
-}
-
-.visi-section blockquote {
-  font-size: 16px;
-  font-style: italic;
-  text-align: center;
-  color: #555;
-  margin: 0;
-  padding: 10px;
-  border-left: 5px solid #007bff;
-  background-color: #fff;
-}
-
-.misi-section ol {
-  margin: 0;
-  padding-left: 20px;
-  list-style: decimal;
-}
-
-.misi-section li {
-  font-size: 14px;
-  line-height: 1.8;
-}
-
-.read-more-button {
-  display: block;
-  margin: 20px auto 0;
-  padding: 10px 20px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.read-more-button:hover {
-  background-color: #0056b3;
-}
-.identitas-sekolah-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-
-.identitas-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.identitas-content {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-}
-
-.identitas-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.identitas-content li {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.identitas-content li strong {
-  font-weight: bold;
-}
-
-.identitas-content ul ul {
-  margin-left: 20px;
-}
-
-.read-more-button {
-  display: block;
-  margin: 20px auto 0;
-  padding: 10px 20px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.read-more-button:hover {
-  background-color: #0056b3;
-}
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-
-.title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.card {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  width: 200px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
-
-.card h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.info-icon {
-  font-size: 1.2rem;
-  margin-right: 5px;
-}
-
-.read-more {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.read-more:hover {
-  background-color: #0056b3;
-}
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-
-.title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.organization-list {
-  text-align: left;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-}
-
-.organization-list li {
-  margin: 10px 0;
-  font-size: 1rem;
-}
-
-.role {
-  font-weight: bold;
-}
-
-.read-more {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.read-more:hover {
-  background-color: #0056b3;
-}
-  </style>
+ 
   

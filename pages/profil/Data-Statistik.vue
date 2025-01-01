@@ -62,3 +62,101 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+.container-fluid {
+  padding: 20px;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-secondary {
+  color: #6c757d !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+.bg-info {
+  background-color: #17a2b8 !important;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body h6 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.card-body h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.rounded-3 {
+  border-radius: 16px !important;
+}
+
+.p-2 {
+  padding: 10px !important;
+}
+
+.p-1 {
+  padding: 5px !important;
+}
+
+.m-3 {
+  margin: 15px !important;
+}
+
+.mb-3 {
+  margin-bottom: 15px !important;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+</style>
